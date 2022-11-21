@@ -1,0 +1,88 @@
+@font-face {
+	font-family: "Online"; 
+	src: url(./assets/3574.ttf); 
+}
+
+*{        
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;    
+    color: #000000; 
+    background: linear-gradient(#c6e4ee 0%, #c6e4ee 40%, #fed1ae 60%, #faa0b9 70%, #cb7dcb 80%, #757ecb 100%);       
+}
+
+button, input {
+    border: none;
+    outline: none;
+}
+
+.calc-wrapper {    
+    max-width: 320px;
+    height: 425px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;    
+    border: 3px solid #000000;
+    border-radius: 15px; 
+    background: linear-gradient(to right top, rgb(73, 84, 222), rgb(120, 107, 175));
+}  
+
+
+.section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 7px;
+}
+
+.btn {
+    width: 23%;
+    height: 60px;
+    border: 3px solid #000000;
+    border-radius: 20px;    
+    font-size: 1.563rem;
+    font-weight: 700; 
+    background: linear-gradient(to right, rgb(118, 217, 238) 0%, rgb(160, 234, 250) 100%);
+    opacity: 0.7;
+    transition: 0.2s all;  
+}
+
+.clear_btn:hover {
+    background:linear-gradient(135deg, rgb(222, 73, 109) 0%, rgb(171, 73, 222) 100%);
+}
+
+.operation:hover {
+    background:linear-gradient(135deg, rgb(129, 243, 80) 0%, rgb(3, 254, 219) 100%);
+}
+
+.number:hover {
+    background:linear-gradient(135deg, rgb(255, 174, 39) 0%, rgb(222, 73, 109) 100%);
+}
+
+.decimal:hover {
+    background:linear-gradient(to left bottom, rgb(186, 119, 177), rgb(129, 118, 181));
+}
+
+.btn:active {
+    transform: translateY(-5px);
+}
+
+.input {
+    width: 100%;
+    height: 70px;        
+    border: 4px solid#000000;
+    border-radius: 15px;
+    text-align: right;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: bold;
+    font-size: 57px;
+    color: #ffffff; 
+    background:linear-gradient(to right, rgb(137, 226, 255), rgb(166, 142, 255));
+} 
+  
